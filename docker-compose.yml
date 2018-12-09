@@ -1,0 +1,12 @@
+version: "3.3"
+services: 
+
+  server:
+    image: sergioortegagomez/docker-node
+    volumes:
+      - ./src:/opt/app
+    ports:
+      - 3000:3000
+    environment:
+      - DEBUG=app*
+      
